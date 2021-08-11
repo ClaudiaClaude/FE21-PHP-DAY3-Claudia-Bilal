@@ -70,45 +70,66 @@
 
         // //version 02 
 
-        $numbers2 = array(80, 34, 10, 22, 4, 7, 21, 18, 92, 44);
-        $secondArr= array();
+        // $numbers2 = array(80, 34, 10, 22, 4, 7, 21, 18, 92, 44);
+        // $secondArr= array();
 
-        function geneRandArr($arr){
-            for($i=0; $i < 10; $i++){
-                array_push( $arr, rand(0, 100));
-                echo $arr[$i]." ";
-            }
-            return $arr;
-        }
+        // function geneRandArr($arr){
+        //     for($i=0; $i < 10; $i++){
+        //         array_push( $arr, rand(0, 100));
+        //         echo $arr[$i]." ";
+        //     }
+        //     return $arr;
+        // }
 
-        function printHighest($arr){
+        // function printHighest($arr){
            
-            if($arr != 0){
+        //     if($arr != 0){
                 
-            rsort($arr);
-            echo "<br>The highest number is ". $arr[0];}
+        //     rsort($arr);
+        //     echo "<br>The highest number is ". $arr[0];}
             
+        // }
+
+        
+        // for($i=0; $i < 10; $i++){
+        //     echo $numbers2[$i]." ";
+        // }
+        // printHighest($numbers2);
+
+        // echo "<br><br>";
+
+        
+        // // geneRandArr($secondArr);
+        // // printHighest($secondArr);
+
+        // printHighest(geneRandArr($secondArr));
+        
+
+
+    // //exercise 04
+
+    function game(){
+
+        for($i=1; $i < 101; $i++){
+
+            if($i % 15 == 0){
+                echo "Full Stack<br>";
+            }
+            elseif($i % 5 ==0){
+                echo "Front-End<br>";
+            }
+            elseif($i % 3 ==0){
+                echo "Back-end<br>";
+            }
+            else echo $i."<br>";
+
+
         }
 
-        
-        for($i=0; $i < 10; $i++){
-            echo $numbers2[$i]." ";
-        }
-        printHighest($numbers2);
-
-        echo "<br><br>";
-
-        
-        // geneRandArr($secondArr);
-        // printHighest($secondArr);
-
-        printHighest(geneRandArr($secondArr));
-        
+    }
 
 
-    
-
-
+    game();
 
 
 
